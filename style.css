@@ -29,10 +29,15 @@
   color: #fff;
 }
 
+.user {
+  margin-bottom: 20px;
+}
+
 .user-inner {
   border: solid 2px black;
   padding: 20px;
 }
+
 .avatar {
   width: 100%;
 }
