@@ -7,9 +7,11 @@ const renderUsers = function () {
 
   users.forEach((user) => {
     const template = `
-    <div class="user col-md-6">
-      <h4>Login: ${ user.login }</h4>
-      <img src="${ user.avatarURL }" alt="">
+    <div class="user col-md-4 text-center">
+      <div class="user-inner">
+        <h4>Login: ${ user.login }</h4>
+        <img src="${ user.avatarURL }" class="avatar" alt="">
+        </div>
     </div>`;
     usersDiv.insertAdjacentHTML('beforeend', template);
   })
@@ -46,11 +48,8 @@ document.querySelector('.search').addEventListener('click', function () {
   fetchUser(searchTerm);
 
   document.querySelector('#search-query').value = '';
-
-  setTimeout(function () {
-    button.disabled = false;
-    button.innerHTML = 'Search';
-  }, 500);
+  button.disabled = false;
+  button.innerHTML = 'Search';
 
 });
 

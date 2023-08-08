@@ -28,3 +28,11 @@
 .fa:hover {
   color: #fff;
 }
+
+.user-inner {
+  border: solid 2px black;
+  padding: 20px;
+}
+.avatar {
+  width: 100%;
+}
